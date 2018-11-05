@@ -230,6 +230,7 @@ MonoBehaviour:
   max_speed: 12
   grounded_epsilon: 0.05
   user_layer_platform: 8
+  pickup_tag: pickup
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
