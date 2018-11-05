@@ -17,8 +17,7 @@ public class PlayerController : MonoBehaviour{
     public string pickup_tag;
     // Use this for initialization
     void Start(){
-        get_axis_horizontal = Input.GetAxis("Horizontal");
-        get_key_down_space = Input.GetKey(KeyCode.Space);
+        
         m_rb = GetComponent<Rigidbody>();
         m_collider = GetComponent<Collider>();
         collider_radius = m_collider.bounds.extents.y;
@@ -29,7 +28,8 @@ public class PlayerController : MonoBehaviour{
     // Update is called once per frame
     void Update()
     {
-
+        get_axis_horizontal = Input.GetAxis("Horizontal");
+        get_key_down_space = Input.GetKey(KeyCode.Space);
     }
     private void FixedUpdate()
     {
