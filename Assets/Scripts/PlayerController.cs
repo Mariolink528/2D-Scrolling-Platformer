@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour{
         if (other.gameObject.CompareTag(pickup_tag))
         {
            other.gameObject.SetActive(false);
-            gm.score++;
+            gm.score += 25;
         }
     }
 
