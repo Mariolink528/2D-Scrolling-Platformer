@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour{
     private bool get_key_down_space = false;
     public string pickup_tag;
     public GameManager gm;
+    public string livebox_tag;
     // Use this for initialization
     void Start(){
         
@@ -60,5 +61,12 @@ public class PlayerController : MonoBehaviour{
             gm.score += 25;
         }
     }
-
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag(livebox_tag))
+        {
+            gm.game_over();
+        }
+        
+    }
 }
