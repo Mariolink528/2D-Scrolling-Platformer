@@ -6,6 +6,8 @@ TagManager:
   tags:
   - live_box
   - obstacle
+  - pickup
+  - perimeter
   layers:
   - Default
   - TransparentFX
